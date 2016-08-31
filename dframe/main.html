@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>通用管理模板</title>
+    <link href="frame.css" rel="stylesheet" type="text/css" /> 
+    <style type="text/css">
+    body {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        overflow: hidden;
+        height: 100%;
+        max-height: 100%;
+    }
+    </style>
+    <script language="javascript" type="text/javascript">
+    	function SetWinHeight(obj) {
+	        var win = obj;
+	        if (document.getElementByIdx_x) {
+	            if (win && !window.opera) {
+	                if (win.contentDocument &&
+	                    win.contentDocument.body.offsetHeight)
+	                    win.height = win.contentDocument.body.offsetHeight;
+	                else if (win.Document &&
+	                    win.Document.body.scrollHeight)
+	                    win.height = win.Document.body.scrollHeight;
+	            }
+	        }
+	    }
+    </script>
+</head>
+
+<body> 
+        <div id="frame-left">
+            <iframe id="left" name="left" frameborder="0" src="left1.html" scrolling="yes" width="100%" height="100%">
+            	
+            </iframe>
+        </div>
+        <div id="frame-top">
+            <iframe id="top" name="top" frameborder="0" src="head.html" scrolling="no" width="100%" height="100%">
+            	
+            </iframe>
+        </div>
+        <div id="frame-content">
+            <iframe id="content" name="content" frameborder="0" scrolling="yes" width="100%" height="100%">
+            	
+            </iframe>
+        </div> 
+</body>
+
+</html>
